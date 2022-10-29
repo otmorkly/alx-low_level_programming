@@ -1,5 +1,4 @@
 /*
- * Project : 
  * Programmer: Othniel Morkly
  * For ALX School 2022
  */
