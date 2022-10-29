@@ -1,23 +1,22 @@
-/*
- * File: 4-rev_array.c
- * Auth: Othniel Morkly
- */
-
 #include "main.h"
 
 /**
- * reverse_array - Reverses the content of an array of integers.
- * @a: The array of integers to be reversed.
- * @n: The number of elements in the array.
- */
-void reverse_array(int *a, int n)
+* print_rev - prints a string in reverse followed by a new line
+* @s: string to be printed in reverse
+*
+* Return: no return
+*/
+void print_rev(char *s)
 {
-	int tmp, index;
+	int c = 0;
+	int i;
 
-	for (index = n - 1; index >= n / 2; index--)
+	while (s[c] != '\0')
 	{
-		tmp = a[n - 1 - index];
-		a[n - 1 - index] = a[index];
-		a[index] = tmp;
+		c++;
 	}
+
+	for (i = c - 1; i >= 0; i--)
+		_putchar(s[i]);
+	_putchar('\n');
 }
